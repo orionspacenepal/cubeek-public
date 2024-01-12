@@ -1,5 +1,7 @@
 # CUBEEK - A Training Kit for Cube-Sat
-![CUBEEK Image](images/Cubeek.jpg)
+<div style="text-align:center;">
+    <img src="images/Cubeek.jpg" alt="Your Image Description" width="70%">
+</div>
 
 CubeSat are tiny box-shaped satellites that are mainly launched into
 low Earth orbit to observe the Earth, test new communications
