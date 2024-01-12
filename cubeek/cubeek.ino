@@ -1,10 +1,10 @@
 #include <SPI.h>
-#include <LoRa.h>
 #include <Wire.h>
+#include <SoftwareSerial.h>
+#include <LoRa.h>
 #include <Adafruit_BMP085.h>
 #include <TinyGPS++.h>
 #include <Adafruit_INA219.h>
-#include <SoftwareSerial.h>
 
 // GPS variables:
 SoftwareSerial GPS_SoftSerial(3, 4);
