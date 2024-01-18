@@ -27,6 +27,7 @@ The communication module:
 ## Libraries Required
 Download and add these libraries in order to run CUBEEK software properly. Follow the respective link to download them.
 1. INA219: [click here](https://github.com/adafruit/Adafruit_INA219)
+1. Dallas Temperature Sensor: [click here](https://github.com/milesburton/Arduino-Temperature-Control-Library)
 1. LORA: [click here](https://github.com/sandeepmistry/arduino-LoRa)
 2. GPS: [click here](https://github.com/mikalhart/TinyGPSPlus.git)
 3. BMP085: [click here](https://github.com/adafruit/Adafruit-BMP085-Library.git)
