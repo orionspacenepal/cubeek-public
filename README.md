@@ -24,11 +24,23 @@ Modules that are used for Payload:
 The communication module:
 * LORA (RA-02)
 
-## Boards Required (if you don't have normal Arduino Pro-mini)
+## Boards Required (Incase you don't have normal Arduino Pro-mini)
 Download and add these Boards in order to run CUBEEK software properly. Follow the respective link to download them.
 1. Add this link to the preference section of your Arduino IDE.
-`https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json`
 
+    File --> Preferences
+    ```
+    https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json 
+    ```
+    ![preference](images/preference_setting.png)
+2. Install the MiniCore board from board manager.
+
+    Tools --> Board --> Board Manager...
+    
+    ![CUBEEK Image](images/minicore_install.png)
+3. Select all the setting according to given image. (Don't forget to add port.)
+
+    ![CUBEEK Image](images/minicore_setting.png)
 
 ## Libraries Required
 Download and add these libraries in order to run CUBEEK software properly. Follow the respective link to download them.
