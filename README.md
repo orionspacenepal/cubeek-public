@@ -24,24 +24,6 @@ Modules that are used for Payload:
 The communication module:
 * LORA (RA-02)
 
-## Boards Required (Incase you don't have normal Arduino Pro-mini)
-Download and add these Boards in order to run CUBEEK software properly. Follow the respective link to download them.
-1. Add this link to the preference section of your Arduino IDE.
-
-    File --> Preferences
-    ```
-    https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json 
-    ```
-    ![preference](images/preference_setting.png)
-2. Install the MiniCore board from board manager.
-
-    Tools --> Board --> Board Manager...
-    
-    ![CUBEEK Image](images/minicore_install.png)
-3. Select all the setting according to given image. (Don't forget to add port.)
-
-    ![CUBEEK Image](images/minicore_setting.png)
-
 ## Libraries Required
 Download and add these libraries in order to run CUBEEK software properly. Follow the respective link to download them.
 1. LORA: [click here](https://github.com/sandeepmistry/arduino-LoRa)
@@ -53,3 +35,21 @@ Download and add these libraries in order to run CUBEEK software properly. Follo
 Download software from following their links.
 1. Arduino IDE: [click here](https://www.arduino.cc/en/software)
 2. FT232R Driver: [click here](https://ftdichip.com/drivers/vcp-drivers/)
+
+## Boards Required (Incase you don't have normal Arduino Pro-mini)
+Download and add these Boards in order to run CUBEEK software properly. Follow the respective link to download them.
+1. Add this link to the preference section of your Arduino IDE.
+
+    File --> Preferences
+    ```
+    https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json 
+    ```
+    ![preference](images/preference_setting_normal.png)
+2. Install the MiniCore board from board manager.
+
+    Tools --> Board --> Board Manager...
+    
+    ![CUBEEK Image](images/minicore_install.png)
+3. Select all the setting according to given image. (Don't forget to add port.)
+
+    ![CUBEEK Image](images/minicore_setting.png)
