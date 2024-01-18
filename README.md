@@ -19,9 +19,16 @@ Modules that are used for Payload:
 * BMP085
 * MPU6050
 * Temt6000
+* Dallas Temperature Sensor
 
 The communication module:
 * LORA (RA-02)
+
+## Boards Required (if you don't have normal Arduino Pro-mini)
+Download and add these Boards in order to run CUBEEK software properly. Follow the respective link to download them.
+1. Add this link to the preference section of your Arduino IDE.
+`https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json`
+
 
 ## Libraries Required
 Download and add these libraries in order to run CUBEEK software properly. Follow the respective link to download them.
