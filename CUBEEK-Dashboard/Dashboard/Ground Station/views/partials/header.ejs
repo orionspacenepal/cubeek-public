@@ -1,0 +1,39 @@
+<div class="header">
+    <a href="https://www.facebook.com/ORIONSpaceNepal">
+        <img class="logo" src="/assets/logo/orion_logo.png" alt="logo">
+    </a>
+    <div class="title">CUBEEK DASHBOARD</div>
+    <div class="nav">
+        <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a>
+        <a href="/housekeeping" class="<%= currentPage === 'housekeeping' ? 'active' : '' %>">Housekeeping Data</a>
+        <a href="/communication" class="<%= currentPage === 'communication' ? 'active' : '' %>">Comm. & Nav.</a>
+    </div>
+    <div class="header-right">
+        <form class="form">
+            <select class="select" id="numb" onchange="myFunction()">
+                <option>---Choose PORT---</option>
+                <% ports.forEach(function(port) { %>
+                    <option><%= port %></option>
+                <% }); %>
+            </select>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let selectedPort = sessionStorage.getItem('selectedPort');
+        if (selectedPort) {
+            document.getElementById("numb").value = selectedPort;
+            socket.emit("message", selectedPort); // Send the stored port number to the server
+        }
+    });
+
+    function myFunction() {
+        var myPort = document.getElementById("numb");
+        let selectedPort = myPort.options[myPort.selectedIndex].text;
+        console.log(selectedPort);
+        sessionStorage.setItem('selectedPort', selectedPort); // Save selected port to session storage
+        socket.emit("message", selectedPort);
+    }
+</script>

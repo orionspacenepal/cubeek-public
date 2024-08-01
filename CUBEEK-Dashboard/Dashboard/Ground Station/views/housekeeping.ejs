@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housekeeping Data</title>
+    <link rel="stylesheet" href="/css/housekeeping.css">
+</head>
+<body>
+    <%- include('partials/header', { ports: ports, currentPage: currentPage }) %>
+    <div class="main-container">
+        <div class="chart-container-1">
+            <canvas id="chart-1"></canvas>
+        </div>
+        <div class="chart-container-2">
+            <canvas id="chart-2"></canvas>
+        </div> 
+    </div>
+    <div class="main-container">
+        <div class="chart-container-1">
+            <canvas id="chart-3"></canvas>
+        </div>
+        <div class="chart-container-2">
+            <canvas id="chart-4"></canvas>
+        </div>
+        <div class="chart-container-3">
+            <canvas id="chart-5"></canvas>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/housekeeping.js"></script>
+</body>
+</html>

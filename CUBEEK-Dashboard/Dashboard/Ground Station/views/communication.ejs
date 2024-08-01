@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication & Navigation</title>
+    <link rel="stylesheet" href="/css/communication.css">
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <%- include('partials/header', { currentPage: 'communication' }) %>
+    <div class="main-container">
+        <div class="communication-container">
+            <h2>Telecommand</h2>
+            <textarea id="telecommandInput" placeholder="Enter telecommand"></textarea>
+            <button id="sendButton">Send</button>
+            <div id="messageDisplay"></div>
+        </div>
+        <div class="navigation-container">
+            <h2>Navigation</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+    <!-- Include Leaflet.js library -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/communication.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>

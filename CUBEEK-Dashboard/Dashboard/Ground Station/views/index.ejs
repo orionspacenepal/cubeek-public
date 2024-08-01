@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+
+<body> 
+    <%- include('partials/header', { ports: ports, currentPage: currentPage }) %>
+
+    <div class="main-container">
+        <div class="chart-container-1">
+            <canvas id="chart-alt"></canvas>
+        </div>
+        <div class = "chart-container-2">
+            <div class="satellite-image">
+                <img src="assets/images/cubeek.png" alt="satimg">
+                <span class="image-text">CUBEEK</span>
+            </div>
+        </div>
+        <div class = "chart-container-3">
+            <div class="GND-image">
+                <img src="assets/images/GNDSTA.png" alt="satimg">
+                <span id="img-txt">GROUND STATION</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-container">
+        <div class="chart-container-1">
+            <canvas id="chart-1"></canvas> 
+        </div>
+        <div class="chart-container-2">
+            <canvas id="chart-2"></canvas>
+        </div> 
+        <div class="chart-container-3">
+            <canvas id="chart-3"></canvas>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="chart-container-1">
+            <canvas id="chart-4"></canvas>
+        </div>
+        <div class="chart-container-2">
+            <canvas id="chart-5"></canvas>
+        </div>
+        <div class="chart-container-3">
+            <canvas id="chart-6"></canvas>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+    <script src="js/script.js"></script>
+
+   
+
+</body>
+
+</html>
