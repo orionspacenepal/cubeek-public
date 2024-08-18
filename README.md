@@ -53,7 +53,9 @@ Here you shall find different test codes for uploading to your CUBEEK's MCU.
 ## 2. Dashboard:- 
 Here are setup procedure for visualization of your data in form of graphs.
 1. Install the NodeJs as given
-![Software_installation](images/Software_inst.png)
+
+<img src="images/Software_inst.png" width="400">
+
 2. Navigate to Ground Station and you shall see the files as below.
 ![Dir](images/Cloned_direct_dash.png)
 3. Navigate to :`Dashboard -> Ground Station`.
